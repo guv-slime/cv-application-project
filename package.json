@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite & tailwindcss build -i ./src/styles/input.css -o ./src/styles/main.css --watch",
-    "build": "vite build & tailwindcss -i ./src/styles/input.css -o ./src/styles/main.css --minify",
+    "build": "vite build && tailwindcss -i ./src/styles/input.css -o ./src/styles/main.css --minify",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "netlify-cli": "^17.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
