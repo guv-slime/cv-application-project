@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-800;
-  margin: 0;
-  display: flex;
-  place-items: center;
+  @apply bg-gradient-to-br;
+  @apply from-slate-800;
+  @apply to-slate-950;
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
